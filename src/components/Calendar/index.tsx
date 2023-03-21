@@ -44,6 +44,7 @@ export function Calendar({ selectedDate, onDateSelected }: CalendarProps) {
   const shortWeekDays = getWeekDays({ short: true })
   const currentMonth = currentDate.format('MMMM')
   const currentYear = currentDate.format('YYYY')
+
   const username = String(router.query.username)
 
   const { data: blockedDates } = useQuery<BlockedDates>(

@@ -50,7 +50,7 @@ export function ConfirmStep({
   }
 
   const describedDate = dayjs(schedulingDate).format('DD[ de ]MMMM[ de ]YYYY')
-  const describedTime = dayjs(schedulingDate).format('HH:MM[h]')
+  const describedTime = dayjs(schedulingDate).format('HH:mm[h]')
 
   return (
     <ConfirmForm as="form" onSubmit={handleSubmit(handleConfirmScheduling)}>
